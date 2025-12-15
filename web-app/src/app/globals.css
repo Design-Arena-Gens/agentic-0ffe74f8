@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fdf6ec;
+  --foreground: #2f1c0f;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-base-sans);
+  --font-display: var(--font-devanagari-serif);
+}
+
+body {
+  min-height: 100vh;
+  background: radial-gradient(110% 120% at 20% 20%, #fff9f0 0%, #fde9ce 55%, #f2d7b7 100%);
+  color: var(--foreground);
+  font-family: var(--font-sans), "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+}
+
+.text-display {
+  font-family: var(--font-display), "Noto Serif", serif;
+}
